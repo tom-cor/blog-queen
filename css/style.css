@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400&display=swap');
+
+@font-face {
+    font-family: 'queengrunge';
+    src: url(../resources/fonts/QueenInlineGrunge.ttf) format("truetype");
+}
+
+.colors {
+    color: #002b36;  /*bg-darker*/
+    color: #073642;    /*bg-dark*/
+    color: #586e75;
+    color: #657b83;
+    color: #839496;
+    color: #93a1a1;
+    color: #eee8d5;    /*bg-light*/
+    color: #fdf6e3;    /*bg-lighter*/
+    color: #b58900;
+    color: #cb4b16;
+    color: #dc322f;
+    color: #d33682;
+    color: #6c71c4;
+    color: #268bd2;
+    color: #2aa198;
+    color: #859900;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a, li, button {
+    text-decoration: none;
+    font-family: "Inner Tight", sans-serif;
+    font-size: large;
+}
+
+a img {
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+
+a img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+.text {
+    color: #93a1a1;
+    font-family: "Inner Tight", sans-serif;
+}
+
+h1 {
+    font-family: "queengrunge";
+    font-size: xx-large;
+    color: #859900;
+}
+
+h2 {
+    font-family: "queengrunge";
+    font-size: x-large;
+    color: #859900;
+}
+
+body {
+    background-color: #002b36;
+    margin: 5px 5px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    max-height: 35vh;
+    height: auto;
+    width: auto;
+    padding: 10px 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #073642;
+
+    padding: 10px 10%;
+    min-height: 70px;
+    height: 10vh;
+}
+
+.logo {
+    object-fit: cover;
+    max-height: 100%;
+    min-height: 50px;
+    max-width: 100%;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    /* 
+    overflow: hidden;
+    */
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    padding: 5px;
+    /* display: inline-block; */
+    /* 
+    padding: 10px;
+    border: 10px solid #073642;
+    margin: 10px 10px 10px 10px;
+     */
+}
+.push-right {
+    margin-left: auto;
+    /*
+    border: 2px solid #859900;
+    */
+}
+    
+.nav-button-pressed {
+    background-color: #002b36 !important;
+}
+
+.nav-list li a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "queengrunge";
+    font-size: xx-large;
+    color: #b58900;
+    /* padding: 14px 16px;
+    border: 2px solid #073642;
+    border-radius: 10px;
+    */
+}
+    
+.nav-list li a:hover {
+    background-color: #eee8d5;
+}
+
+.nav-list li a:active {
+    color: #cb4b16;
+}
+
+.nav-list li a:focus {
+    /* border: 2px solid #268bd2;
+    background-color: #002b36; */
+}
+
+.welcome-screen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.welcome-screen p {
+    color: #268bd2;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.main-bios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 10px 10px;
+    row-gap: .5vh;
+    column-gap: .5vw;
+}
+
+.main-bios div img {
+    height: 40vh;
+}
+
+.main-bios div {
+    color: #93a1a1;
+    justify-self: center;
+}
+
+.main-discography {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px 10px;
+}
+
+.main-discography img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+footer {
+    background-color: #073642;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    row-gap: 5px;
+    column-gap: 5px;
+    align-items: center;
+    margin: 5px;
+}
+
+.social-media i {
+    font-size: 30px;
+    color: #b58900;
+    margin: 5px;
+    justify-self: center;
+}
+
+.social-media a {
+    color: #859900;
+    text-decoration: underline;
+}
+
+.info {
+    color: #859900;
+    justify-self: flex-end;
+    margin: 5px;
+}
